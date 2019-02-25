@@ -9,6 +9,7 @@
 import UIKit
 
 final class PersistencyManager {
+  //SIngleton
   private var albums = [Album]()
   
   init() {
@@ -57,4 +58,5 @@ final class PersistencyManager {
   func deleteAlbum(at index: Int) {
     albums.remove(at: index)
   }
+  //Singleton
 }

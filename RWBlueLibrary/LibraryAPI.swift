@@ -3,6 +3,7 @@
 import UIKit
 
 class LibraryAPI {
+  //Facade - add one API Client for all App
   static let instance = LibraryAPI()
   private init(){}
   private let persistencyManager = PersistencyManager()
@@ -26,4 +27,5 @@ class LibraryAPI {
       httpClient.postRequest("/api/deleteAlbum", body: "\(index)")
     }
   }
+  //Facade
 }
